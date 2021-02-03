@@ -1,0 +1,472 @@
+* {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a.disabled {
+  cursor: not-allowed; /*  курсор в виде стрелки */
+  color: black; /* цвет текста серый */
+}
+
+a:hover.disabled {
+  color: black;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+button {
+  cursor: pointer;
+}
+
+.header {
+  width: 100%;
+  background-color: #00897b;
+  height: 8vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-logo a {
+  text-decoration: none;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 25px;
+}
+
+nav a {
+  margin: 0px 10px;
+  color: white;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #80cbc4;
+}
+
+.main h2 {
+  margin-top: 50px;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main form {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.main form input {
+  width: 500px;
+  height: 40px;
+  font-size: 18px;
+  padding: 5px 20px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.main form button {
+  height: 50px;
+  margin-left: 10px;
+  padding: 0px 20px;
+  font-size: 16px;
+  background-color: indianred;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.main-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 100px auto;
+}
+
+.main-list a {
+  margin: 50px 0px;
+}
+
+.main {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.productItem {
+  width: 350px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  margin-top: 0px;
+  border: 1px solid black;
+}
+
+.productItem-content {
+  margin: auto;
+  text-align: center;
+}
+
+.productItem-content p {
+  font-size: 15px;
+}
+
+.productItem-content h4 {
+  font-size: 20px;
+}
+
+.productItem-img {
+  margin: 0px auto;
+
+  padding-top: 15.25%;
+}
+
+.productItem-img img {
+  max-width: 350px;
+  max-height: 150px;
+}
+
+.createPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 40px auto;
+}
+
+.createPage-cont {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 80px auto;
+}
+
+.createPage-img {
+  width: 25%;
+}
+
+.createPage-text {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+}
+
+.createPage-text form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.createPage-text form input {
+  width: 100%;
+  margin: 10px 0px;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid grey;
+  outline: none;
+}
+
+.createPage-text form button {
+  height: 35px;
+  width: 50%;
+  margin: 10px auto;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+.center {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-input {
+  width: 250px;
+  padding: 20px;
+  background: #fff;
+}
+.form-input input {
+  display: none;
+}
+.form-input label {
+  display: block;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #333;
+  color: #fff;
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: Uppercase;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.form-input img {
+  width: 100%;
+  display: none;
+  margin: 10px 0px;
+}
+
+li {
+  list-style: none;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 900px;
+  margin: 50px auto;
+}
+
+.product-content {
+  margin-left: 50px;
+}
+
+.product-content h4 {
+  font-size: 25px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.product-content p {
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.product-content button {
+  background-color: #e53935;
+  color: white;
+  border: none;
+  font-size: 18px;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.product-img img {
+  width: 500px;
+}
+
+.cartPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.cart {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.cart .cart-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+}
+
+.cart .cart-text .cart-text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart-text-content h3 {
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.cart .cart-img {
+  /* position: relative; */
+  /* 16:9 Aspect Ratio */
+}
+
+.cart .cart-img img {
+  /* position: absolute;
+  left: 0;
+  top: 0; */
+  max-width: 520px;
+  max-height: 300px;
+}
+
+.cartPage-conclude {
+  margin-top: 80px;
+}
+
+.cartPage-buyBtn button {
+  height: 35px;
+  width: 150px;
+  font-size: 18px;
+  margin: auto;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+.deleteBtn {
+  padding: 12px 25px;
+  color: white;
+  background-color: #f44336;
+  border: none;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+.price {
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.auth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.authPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  width: 40%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.authPage h3 {
+  font-size: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+  color: grey;
+}
+
+.authPage form {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0px;
+}
+
+.authPage input {
+  width: 450px;
+  height: 50px;
+  padding: 0px 15px;
+  margin-bottom: 30px;
+  font-size: 15px;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+
+.authPage-btns {
+  display: flex;
+  margin-top: 30px;
+}
+
+.authPage button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  font-size: 17px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.signIn {
+  background-color: #2196f3;
+  color: white;
+}
+
+.signUp {
+  background-color: #f44336;
+  color: white;
+}
+
+.formErrors {
+  text-align: center;
+  color: #f44336;
+}
+
+.messageBox {
+  margin: 30px 0px;
+}
+
+.messageBox .success {
+  border: 1px solid #4caf50;
+  width: 450px;
+  padding: 5px 25px;
+  color: #4caf50;
+  text-align: center;
+}
+
+.messageBox .warning {
+  border: 1px solid #f44336;
+  width: 450px;
+  padding: 5px 25px;
+  color: #f44336;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+.payment {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 910px) {
+  .product {
+    width: 90%;
+    margin: auto;
+  }
+
+  .product-content {
+    width: 60%;
+  }
+
+  .product-content p {
+    font-size: 15px;
+  }
+}
